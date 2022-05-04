@@ -7,3 +7,5 @@
 - Learned about Handling different routes
 
 - Learned about parsing incoming requests
+
+- Learned about adding a 404 error page.

@@ -1,10 +1,12 @@
+const path = require('path');
+
 const express = require('express');
 
 const router = express.Router();
 
 router.get('/', (req, res, next) => {
-  console.log('In another middleware');
-  res.send('<h1>Hello from Nodejs Express learning</h1>');
+  // console.log('In another middleware');
+  res.sendFile(path.join(__dirname, '../', 'views', 'shop.html'));
 });
 
 module.exports = router;
